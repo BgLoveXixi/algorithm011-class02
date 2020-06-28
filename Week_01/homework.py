@@ -31,6 +31,6 @@ class Solution(object):
         """
         sums = 0
         for i in digits:
-            sums = sums * 10 + i #10进制乘以10，进行累积和；
-        sums_str = str(sums + 1)
-        return map(int, list(sums_str))
+            sums = sums * 10 + i #得到该数的真实值；
+        sums_new = str(sums + 1)
+        return map(int, list(sums_new))
